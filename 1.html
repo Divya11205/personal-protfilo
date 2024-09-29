@@ -1,0 +1,30 @@
+<html>
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+</script>
+<title>ng-mouseup Directive</title>
+</head>
+<style>
+.up{
+color: green;
+font-size: large;
+}
+.down{
+font-size:medium;
+color:darkred;
+background-color:deeppink;
+}
+</style>
+<body ng-app style="text-align:center">
+    <div>
+    
+    <p ng-class="{up: enter, down: leave}"ng-
+    mouseup="enter=true;leave=false" ng-mousedown="enter=false;leave=true">
+    
+    Hold mouse click to see effect.
+    </p>
+    
+    </div>
+    </body>
+    </html>
